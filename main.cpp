@@ -1,14 +1,34 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std ;
-int main() {
-    double m ,a ,c;
-    cout << "Moadel khod ra vared konid :";
-    cin>> m;
+void draw_circle () ;
+void draw_rectangle ();
+void draw_triangel ();
 
-    c=m- floor(m) ;
-    cout<< floor(m) <<"and"<< c ;
+int main()
+{
+   draw_circle ();
+   draw_rectangle();
+   draw_triangel () ;
 
     return 0;
+}
+ void draw_circle () {
+    cout<<"\n   * *" ;
+    cout<<"\n *      *";
+    cout<<"\n   * * " << endl ;
+
+}
+void draw_rectangle () {
+    cout<<" ________";
+    cout<<"\n|        |";
+    cout<<"\n ________" <<endl ;
+
+
+}
+void draw_triangel (){
+    cout<<"\n  /\\ ";
+    cout<<"\n /  \\";
+    cout<<"\n/    \\";
+    cout<<"\n______";
 }
